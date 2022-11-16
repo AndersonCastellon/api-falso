@@ -3,7 +3,7 @@ const falso = require('@ngneat/falso');
 const notificationsResponse = () => {
     const notifications = [];
 
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 6; i++) {
         const notification = {
             id: falso.randUuid(),
             label: falso.randText(),
