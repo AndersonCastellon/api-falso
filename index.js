@@ -10,6 +10,10 @@ const app = express()
 app.use(cors())
 const port = 3000
 
+app.get('/', (req, res) => {
+    res.send('All ok')
+})
+
 app.get('/:slug/chart-metadata', (req, res) => {
     res.json(chartMetadata)
 })
